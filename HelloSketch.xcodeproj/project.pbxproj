@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		A593E8032268BFEC002D6FD3 /* HelloSketch.h in Headers */ = {isa = PBXBuildFile; fileRef = A593E8012268BFEC002D6FD3 /* HelloSketch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A593E80A2268BFFD002D6FD3 /* HSMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593E8092268BFFD002D6FD3 /* HSMain.swift */; };
+		A593E80E2268C090002D6FD3 /* HelloSketch.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = A593E80B2268C06C002D6FD3 /* HelloSketch.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A593E80D2268C086002D6FD3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				A593E80E2268C090002D6FD3 /* HelloSketch.js in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A593E7FE2268BFEC002D6FD3 /* HelloSketch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HelloSketch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A593E8012268BFEC002D6FD3 /* HelloSketch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloSketch.h; sourceTree = "<group>"; };
 		A593E8022268BFEC002D6FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A593E8092268BFFD002D6FD3 /* HSMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSMain.swift; sourceTree = "<group>"; };
+		A593E80B2268C06C002D6FD3 /* HelloSketch.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = HelloSketch.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +65,8 @@
 			children = (
 				A593E8012268BFEC002D6FD3 /* HelloSketch.h */,
 				A593E8022268BFEC002D6FD3 /* Info.plist */,
+				A593E8092268BFFD002D6FD3 /* HSMain.swift */,
+				A593E80B2268C06C002D6FD3 /* HelloSketch.js */,
 			);
 			path = HelloSketch;
 			sourceTree = "<group>";
@@ -74,6 +93,7 @@
 				A593E7FA2268BFEC002D6FD3 /* Sources */,
 				A593E7FB2268BFEC002D6FD3 /* Frameworks */,
 				A593E7FC2268BFEC002D6FD3 /* Resources */,
+				A593E80D2268C086002D6FD3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -95,6 +115,7 @@
 				TargetAttributes = {
 					A593E7FD2268BFEC002D6FD3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A593E80A2268BFFD002D6FD3 /* HSMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +282,8 @@
 		A593E8072268BFEC002D6FD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -279,6 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.luckypines.osx.sketch.HelloSketch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -286,6 +311,8 @@
 		A593E8082268BFEC002D6FD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
